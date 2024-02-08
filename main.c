@@ -1,6 +1,6 @@
 #include "maze.h"
 
-<<<<<<< HEAD
+
 int g = 0, m = 0;
 Uint32 buffer[1260][720];
 #define texWidth 64 
@@ -147,14 +147,5 @@ int main(int argc, char* args[])
             }
         }
     }
-=======
-
-int main()
-{
-    SDL_Instance instance;
-
-    if (init_instance(&instance) != 0)
-        return (1);
->>>>>>> 55d536e3aa3e967bc4df23e0c5f8c675942079fe
     return (0);
 }

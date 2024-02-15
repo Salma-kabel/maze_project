@@ -3,7 +3,7 @@
 The Maze Project is a simple engaging 3D maze game, written in C. It uses the concept of raycasting to bring the maze to life. In this game, players are tasked with navigating through different routes, their objective being to locate the exit of the maze. But the journey isn’t easy! Players must strategically avoid enemies lurking within the maze, adding a thrilling layer of complexity to the game.
 ## Table of contents
 - [Features](#features)
-  - [Moving](###moving)
+  - [Moving](#moving)
   - Rotation
   - Map
   - Weapons

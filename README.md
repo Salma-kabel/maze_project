@@ -9,6 +9,7 @@ The Maze Project is a simple engaging 3D maze game, written in C. It uses the co
 ## Features
 ### Moving
 The basic and most important feature of the game that the player will use is move where the player uses w,a,s,d keys to navigate through the maze in order to serach for the exit.
+
 ![move gif](https://github.com/Salma-kabel/maze_project/blob/master/Maze2024-02-1520-22-32-ezgif.com-optimize.gif)
 ### Rotation
 ### Map

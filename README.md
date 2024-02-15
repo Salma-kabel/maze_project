@@ -1,4 +1,4 @@
-# **The Maze Project**
+![image](https://github.com/Salma-kabel/maze_project/assets/76133733/d07baba7-2e50-4a29-a56d-0b4ae963e3f9)# **The Maze Project**
 ![map1](https://github.com/Salma-kabel/maze_project/assets/76133733/43b2956e-05c8-4a0f-8d1f-a784ee41ca0f)
 The Maze Project is a simple engaging 3D maze game, written in C. It uses the concept of raycasting to bring the maze to life. In this game, players are tasked with navigating through different routes, their objective being to locate the exit of the maze. But the journey isn’t easy! Players must strategically avoid enemies lurking within the maze, adding a thrilling layer of complexity to the game.
 ## Table of contents
@@ -55,3 +55,4 @@ salma is a software engineer who has a passion for coding and developing program
 [Twitter](https://twitter.com/Salma_Kabel)
 ### Repository of the project
 [The Maze Project](https://github.com/Salma-kabel/maze_project/tree/master)
+[Demo Video](https://www.youtube.com/watch?v=nra30IO2sqM&feature=youtu.be&ab_channel=SalmaSalah)

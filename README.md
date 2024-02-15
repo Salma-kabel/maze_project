@@ -40,8 +40,13 @@ While traversing through the map the player should be carefull and choose good r
 Since i was a little kid i have always loved to play games whether online games or the very simple games the initially came with the first comersial mobile phones no matter how simple or complicated the game was as long as its a game i loved and i always wondered how do people create games and then when i grew up and searched for a career the developing career was always the first thing to catch my attention and i thought why not create an interesting game for the people to enjoy like i enjoyed games when i was little and so here we are, this game The Maze is my first step into that direction, it's very simple compared to the modern games now but i'm absolutly proud of it as a first step and i really enjoyed developing this game part by part and watching after so many errors and trials how the part successfully work and that brought overjoy to my heart and also this made appreciate the amount of effort and work and passion developers put to their work and made me aspire to be better so that one day i can develop something people can love and enjoy.
 ### Author
 **Salma Kabel**
+
 salma is a software engineer who has a passion for coding and developing programs, games ,etc.., she was a communication engineer but she decided to follow her heart and persue the career that she loved which is software, this is her first 3D game and second big project she worked on.
+
 [GitHub](@Salma-kabel)
+
 [LinkedIn](https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin)
+
 [Twitter](https://twitter.com/Salma_Kabel)
 ### Repository of the project
+[The Maze Project](https://github.com/Salma-kabel/maze_project/tree/master)

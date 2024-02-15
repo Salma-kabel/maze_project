@@ -17,6 +17,7 @@ The second important feature in the game is rotation the player can use the left
 ![rotation gif](https://github.com/Salma-kabel/maze_project/blob/master/rotation.gif)
 ### Map
 This feature is very useful especially if the player is not good with direction the player can simply press m and small 2D map of the whole maze open showing the entire maze with all the routes and also it shows the position of the player at that moment marked in green.
+
 ![image](https://github.com/Salma-kabel/maze_project/assets/76133733/960789dd-ffda-49e6-8909-abc60f109d53)
 ### Weapons
 Now we get to an interesting feature that many loves weapons the game offers a variety of weapons the player can change between them by pressing the g key.
@@ -24,6 +25,7 @@ Now we get to an interesting feature that many loves weapons the game offers a v
 ![weapon gif](https://github.com/Salma-kabel/maze_project/blob/master/weapon.gif)
 ### Enemies
 While traversing through the map the player should be carefull and choose good routes or he might meet an unwanted guest.
+
 ![image](https://github.com/Salma-kabel/maze_project/assets/76133733/87e7a18d-4240-4287-ad62-dd5dfdb8dcde)
 
 ## About

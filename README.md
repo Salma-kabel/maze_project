@@ -4,13 +4,14 @@ The Maze Project is a simple engaging 3D maze game, written in C. It uses the co
 ## Table of contents
 - [Features](#features)
   - [Moving](#moving)
-  - Rotation
-  - Map
-  - Weapons
-  - Enemies
-- About
-  - Inspiration
-  - Author
+  - [Rotation](#rotation)
+  - [Map](#map)
+  - [Weapons](#weapons)
+  - [Enemies](#enemies)
+- [About](#about)
+  - [Inspiration](#inspiration)
+  - [Author](#author)
+  - [Repository of the project](#repository-of-the-project)
 
 ## Features
 ### Moving
@@ -40,3 +41,7 @@ Since i was a little kid i have always loved to play games whether online games 
 ### Author
 **Salma Kabel**
 salma is a software engineer who has a passion for coding and developing programs, games ,etc.., she was a communication engineer but she decided to follow her heart and persue the career that she loved which is software, this is her first 3D game and second big project she worked on.
+[GitHub](@Salma-kabel)
+[LinkedIn](https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin)
+[Twitter](https://twitter.com/Salma_Kabel)
+### Repository of the project

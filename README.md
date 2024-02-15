@@ -12,6 +12,9 @@ The basic and most important feature of the game that the player will use is mov
 
 ![move gif](https://github.com/Salma-kabel/maze_project/blob/master/Maze2024-02-1520-22-32-ezgif.com-optimize.gif)
 ### Rotation
+The second important feature in the game is rotation the player can use the left and right arrows to rotate the camera and see the surrounding area it rotates a full 360 degrees giving a good vision to the player surrounding.
+
+![rotation gif](https://github.com/Salma-kabel/maze_project/blob/master/rotation.gif)
 ### Map
 ### Weapons
 ### Enemies

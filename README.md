@@ -8,6 +8,7 @@ The Maze Project is a simple engaging 3D maze game, written in C. It uses the co
   - [Map](#map)
   - [Weapons](#weapons)
   - [Enemies](#enemies)
+  - [Rain](#rain)
 - [About](#about)
   - [Inspiration](#inspiration)
   - [Author](#author)
@@ -34,6 +35,10 @@ Now we get to an interesting feature that many loves weapons the game offers a v
 While traversing through the map the player should be carefull and choose good routes or he might meet an unwanted guest.
 
 ![image](https://github.com/Salma-kabel/maze_project/assets/76133733/87e7a18d-4240-4287-ad62-dd5dfdb8dcde)
+### Rain
+This is one of the nice features the player can activate rain by pressing r key and then has to move or rotate and the rain will drop.
+
+![image](https://github.com/Salma-kabel/maze_project/assets/76133733/58633e3d-e775-494f-9b3c-82ac339740b5)
 
 ## About
 ### Inspiration

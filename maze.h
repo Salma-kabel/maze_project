@@ -1,4 +1,5 @@
 #ifndef MAZE_H
+
 #define MAZE_H
 
 #include <SDL2/SDL.h>
@@ -11,24 +12,72 @@
 
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
-extern int **worldMap;
 extern int mapWidth;
 extern int mapHeight;
+int m = 0;
+Uint32 buffer[1260][720];
+const int SCREEN_WIDTH = 1260;
+const int SCREEN_HEIGHT = 720;
+int **worldMap;
+double depthBuffer[1260];
 
+#define numSprites 3
+char *weapon[5] = {"textures/we1.png", "textures/we2.png",
+	"textures/we3.png", "textures/we4.png", "textures/we6.png"};
+int w = 0, r = 0;
+struct Sprite
+{
+  double x;
+  double y;
+};
+struct Sprite sprite[numSprites] =
+{
+ //{12, 12},// A sprite at position (22.0, 12.0);
+ {2,2},
+ {6,8},
+ {6,17},
+ //{21,5}
+};
+
+typedef struct {
+    double x, y; // Position
+    double speed;   // Falling speed
+} Raindrop;
+SDL_Instance instance2;
+SDL_Surface *screenSurface2 = NULL;
+Raindrop raindrops[1000]
 typedef struct SDL_Instance
 {
     SDL_Window *window;
     SDL_Renderer *renderer;
 } SDL_Instance;
 
-int init_instance(SDL_Instance *instance, const int SCREEN_WIDTH, const int SCREEN_HEIGHT, char *name);
+
+int init_instance(SDL_Instance *instance, const int SCREEN_WIDTH,
+	const int SCREEN_HEIGHT, char *name);
 void map(void);
-void putpixel(SDL_Surface *surface, int x, int y, Uint32 pixel);
-void pmove(SDL_Event *event, double *posX, double *posY, double dirX, double dirY, double *planeX, double *planeY, double frameTime);
-void rotation(SDL_Event *event, double *posX, double *posY, double dirX, double dirY, double *planeX, double *planeY, double frameTime);
-void floor_tex(double *posX, double *posY, double dirX, double dirY, double *planeX, double *planeY, SDL_Surface* screenSurface, SDL_Instance instance);
+void color_pixel(SDL_Surface *surface, int x, int y, Uint32 color);
+void move_rot(double *planeX, double *planeY, double *posX,
+	double *posY, double *dirX, double *dirY, double frameTime);
+void wall_tex(SDL_Surface *texture, double *posX, double *posY,
+	double *dirX, double *dirY, double *planeX, double *planeY,
+	SDL_Surface *screenSurface);
+void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
+	double *planeX, double *planeY, SDL_Surface *screenSurface,
+	SDL_Instance instance);
 int **parser(char *path);
-void draw(SDL_Surface *screenSurface, SDL_Instance instance, int posx, int posy);
+void draw(SDL_Surface *screenSurface, SDL_Instance instance,
+	int posx, int posy);
+void drawSprites( SDL_Surface *screenSurface, double posX, double posY,
+	double dirX, double dirY, double planeX, double planeY);
+void printRGB(SDL_Surface *surface);
+void drawWeapon(SDL_Surface *screenSurface, int w);
+void initRain();
+void drawRain(SDL_Instance instance, SDL_Surface *screenSurface);
+int keys(double *posX, double *posY, double *dirX, double *dirY,
+	double *planeX, double *planeY, SDL_Surface *screenSurface,
+	SDL_Instance instance, Uint32 *oldTime);
+
 
 
 #endif

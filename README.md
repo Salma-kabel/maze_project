@@ -24,7 +24,7 @@ The second important feature in the game is rotation the player can use the left
 
 ![rotation gif](https://github.com/Salma-kabel/maze_project/blob/master/textures/rotation.gif)
 ### Map
-This feature is very useful especially if the player is not good with direction the player can simply press m and small 2D map of the whole maze open showing the entire maze with all the routes and also it shows the position of the player at that moment marked in green.
+This feature is very useful especially if the player is not good with direction the player can simply press m and small 2D map of the whole maze open showing the entire maze with all the routes and also it shows the position of the player at that moment marked in green and the direction where the player is looking is represented by the blue rectangle.
 
 ![image](https://github.com/Salma-kabel/maze_project/assets/76133733/633a006c-46bb-41c6-b252-5d893f7e94bf)
 

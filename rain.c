@@ -2,7 +2,7 @@
 
 
 
-void initRain(void)
+void init_rain(void)
 {
 	int drops = 1000;
 
@@ -15,7 +15,7 @@ void initRain(void)
 }
 
 
-void drawRain(SDL_Instance instance, SDL_Surface *screenSurface)
+void draw_rain(SDL_Instance instance, SDL_Surface *screenSurface)
 {
 	SDL_Rect raindropRect;
 

@@ -22,15 +22,15 @@ int main(int argc, char *args[])
 		return (1);
 	screenSurface = SDL_GetWindowSurface(instance.window);
 	oldTime = SDL_GetTicks();
-	initRain();
+	init_rain();
 	while (1)
 	{
 		floor_tex(&posX, &posY, &dirX, &dirY,
 			&planeX, &planeY, screenSurface, instance);
 		wall_tex(texture, &posX, &posY, &dirX,
 			&dirY, &planeX, &planeY, screenSurface);
-		drawWeapon(screenSurface, w);
-		drawSprites(screenSurface,  posX, posY, dirX, dirY, planeX, planeY);
+		draw_weapon(screenSurface, w);
+		draw_enemies(screenSurface,  posX, posY, dirX, dirY, planeX, planeY);
 		SDL_UpdateWindowSurface(instance.window);
 		if (keys(&posX, &posY, &dirX, &dirY, &planeX, &planeY,
 			screenSurface, instance, &oldTime) == 2)

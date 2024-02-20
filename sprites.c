@@ -2,7 +2,7 @@
 
 
 
-void drawSprites(SDL_Surface *screenSurface, double posX, double posY, double dirX, double dirY, double planeX, double planeY)
+void draw_enemies(SDL_Surface *screenSurface, double posX, double posY, double dirX, double dirY, double planeX, double planeY)
 {
 	double spriteX, spriteY, invDet, transformX, transformY;
 	int spriteScreenX, spriteHeight, drawStartY, drawEndY, spriteWidth,
@@ -58,7 +58,7 @@ void drawSprites(SDL_Surface *screenSurface, double posX, double posY, double di
 	SDL_FreeSurface(spriteImage);
 }
 
-void drawWeapon(SDL_Surface *screenSurface, int w)
+void draw_weapon(SDL_Surface *screenSurface, int w)
 {
 	int weaponPosX, weaponPosY;
 	SDL_Surface *originalWeapon = IMG_Load(weapon[w]);

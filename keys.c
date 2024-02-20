@@ -39,17 +39,17 @@ int keys(double *posX, double *posY, double *dirX, double *dirY,
 					w = 0;
 				else
 					w++;
-				drawWeapon(screenSurface, w);
+				draw_weapon(screenSurface, w);
 			}
 			if (event.key.keysym.sym == SDLK_r && r == 0)
 			{
 				r = 1;
-				drawRain(instance, screenSurface);
+				draw_rain(instance, screenSurface);
 			}
 			else if (event.key.keysym.sym == SDLK_r && r == 1)
 				r = 0;
 			else if (r == 1)
-				drawRain(instance, screenSurface);
+				draw_rain(instance, screenSurface);
 			time = SDL_GetTicks();
 			frameTime = (time - *oldTime) / 1000.0;
 			*oldTime = time;

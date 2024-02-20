@@ -68,12 +68,11 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 int **parser(char *path);
 void draw(SDL_Surface *screenSurface, SDL_Instance instance,
 	int posx, int posy);
-void drawSprites( SDL_Surface *screenSurface, double posX, double posY,
+void draw_sprites( SDL_Surface *screenSurface, double posX, double posY,
 	double dirX, double dirY, double planeX, double planeY);
-void printRGB(SDL_Surface *surface);
-void drawWeapon(SDL_Surface *screenSurface, int w);
-void initRain();
-void drawRain(SDL_Instance instance, SDL_Surface *screenSurface);
+void draw_weapon(SDL_Surface *screenSurface, int w);
+void init_rain();
+void draw_rain(SDL_Instance instance, SDL_Surface *screenSurface);
 int keys(double *posX, double *posY, double *dirX, double *dirY,
 	double *planeX, double *planeY, SDL_Surface *screenSurface,
 	SDL_Instance instance, Uint32 *oldTime);

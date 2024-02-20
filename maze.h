@@ -33,9 +33,9 @@ struct Sprite
 struct Sprite sprite[numSprites] =
 {
  //{12, 12},// A sprite at position (22.0, 12.0);
- {2,2},
- {6,8},
- {6,17},
+ {6,3},
+ {12,23},
+ {20,6},
  //{21,5}
 };
 
@@ -67,7 +67,7 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 	SDL_Instance instance);
 int **parser(char *path);
 void draw(SDL_Surface *screenSurface, SDL_Instance instance,
-	int posx, int posy);
+	int posx, int posy, double dirX, double dirY);
 void draw_enemies( SDL_Surface *screenSurface, double posX, double posY,
 	double dirX, double dirY, double planeX, double planeY);
 void draw_weapon(SDL_Surface *screenSurface, int w);

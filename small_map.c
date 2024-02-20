@@ -3,7 +3,7 @@
 
 
 void draw(SDL_Surface *screenSurface, SDL_Instance instance,
-	int posx, int posy)
+	int posx, int posy, double dirX, double dirY)
 {
 	Uint32 color;
 	int x, y, blockWidth = 260 / 24, blockHeight = 160 / 24;
@@ -29,5 +29,11 @@ void draw(SDL_Surface *screenSurface, SDL_Instance instance,
 	player.w = blockWidth;
 	player.h = blockHeight;
 	SDL_FillRect(screenSurface, &player, SDL_MapRGB(screenSurface->format, 0, 255, 0));
+	SDL_Rect fov;
+	fov.x = (posx + dirX) * blockWidth;
+	fov.y = (posy + dirY) * blockHeight;
+	fov.w = blockWidth;
+	fov.h = blockHeight;
+	SDL_FillRect(screenSurface, &fov, SDL_MapRGB(screenSurface->format, 0, 0, 255))
 	SDL_UpdateWindowSurface(instance.window);
 }

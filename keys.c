@@ -24,12 +24,12 @@ int keys(double *posX, double *posY, double *dirX, double *dirY,
 					if (init_instance(&instance2, 260, 160, "Maps") != 0)
 						return (2);
 					screenSurface2 = SDL_GetWindowSurface(instance2.window);
-					draw(screenSurface2, instance2, *posX, *posY);
+					draw(screenSurface2, instance2, *posX, *posY, *dirX, *dirY);
 					m = 1;
 				}
 				else if (m == 1)
 				{
-					SDL_DestroyWindow(instance2.window);
+					SDL_DestroyWindow(instance2.window;
 					 m = 0;
 				}
 			}
@@ -55,7 +55,7 @@ int keys(double *posX, double *posY, double *dirX, double *dirY,
 			*oldTime = time;
 			move_rot(planeX, planeY, posX, posY, dirX, dirY, frameTime);
 			if (m == 1)
-				draw(screenSurface2, instance2, *posX, *posY);
+				draw(screenSurface2, instance2, *posX, *posY, *dirX, *dirY);
 			SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0, 0, 0));
 			break;
 		}

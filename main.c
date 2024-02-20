@@ -7,7 +7,7 @@ int main(int argc, char *args[])
 	Uint32 oldTime
 	SDL_Instance instance;
 	SDL_Surface *screenSurface = NULL;
-	double posX = 22, posY = 12, dirX = -1, dirY = 0, planeX = 0, planeY = 1;
+	double posX = 3, posY = 4, dirX = -1, dirY = 0, planeX = 0, planeY = 1;
 	SDL_Surface texture, *original = IMG_Load("textures/colorstone.png");
 
 	if (!original)

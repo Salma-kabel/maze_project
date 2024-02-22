@@ -21,7 +21,7 @@ void draw_rain(SDL_Instance instance, SDL_Surface *screenSurface)
 
 	raindropRect.w = 1;
 	raindropRect.h = 6;
-	for (int i = 0; i < NUM_RAINDROPS; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		raindrops[i].y += raindrops[i].speed;
 		if (raindrops[i].y > SCREEN_HEIGHT)

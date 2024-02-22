@@ -12,11 +12,7 @@ void draw_enemies(SDL_Surface *screenSurface, double posX, double posY, double d
 	SDL_Surface *spriteImage = SDL_CreateRGBSurface(0, 250, 202, 32, 0, 0, 0, 0);
 
 	SDL_BlitScaled(original, NULL, spriteImage, NULL);
-	if (!spriteImage)
-	{
-		printf("IMG_Load: %s\n", IMG_GetError());
-	}
-	for (i = 0; i < numSprites; i++)
+	for (i = 0; i < 3; i++)
 	{
 		spriteX = sprite[i].x - posX;
 		spriteY = sprite[i].y - posY;

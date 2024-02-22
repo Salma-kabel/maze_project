@@ -5,9 +5,9 @@
 void color_pixel(SDL_Surface *surface, int x, int y, Uint32 color)
 {
 	int bytes_pp = surface->format->BytesPerPixel;
-	Uint32 *p = (Uint8 *)surface->pixels + y * surface->pitch + x * bytes_pp;
+	Uint8 *ptr = (Uint8 *)surface->pixels + y * surface->pitch + x * bytes_pp;
 
-	ptr = color;
+	*ptr = color;
 }
 
 void move_rot(double *planeX, double *planeY, double *posX, double *posY,

@@ -16,11 +16,11 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 	SDL_BlitScaled(original, NULL, texture, NULL);
 	for (int y = SCREEN_HEIGHT / 2; y < SCREEN_HEIGHT; y++)
 	{
-		rayDirX0 = dirX - *planeX;
-		rayDirY0 = dirY - *planeY;
-		rayDirX1 = dirX + *planeX;
-		rayDirY1 = dirY + *planeY;
-		p = y - SCREEN_HEIGHT / 2
+		rayDirX0 = *dirX - *planeX;
+		rayDirY0 = *dirY - *planeY;
+		rayDirX1 = *dirX + *planeX;
+		rayDirY1 = *dirY + *planeY;
+		p = y - SCREEN_HEIGHT / 2;
 		posZ = 0.5 * SCREEN_HEIGHT;
 		rowDistance = posZ / p;
 		floorStepX = rowDistance * (rayDirX1 - rayDirX0) / SCREEN_WIDTH;

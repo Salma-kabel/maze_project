@@ -29,7 +29,7 @@ int keys(double *posX, double *posY, double *dirX, double *dirY,
 				}
 				else if (m == 1)
 				{
-					SDL_DestroyWindow(instance2.window;
+					SDL_DestroyWindow(instance2.window);
 					 m = 0;
 				}
 			}
@@ -60,4 +60,5 @@ int keys(double *posX, double *posY, double *dirX, double *dirY,
 			break;
 		}
 	}
+	return (0);
 }

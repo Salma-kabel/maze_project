@@ -21,7 +21,7 @@ const int SCREEN_HEIGHT = 720;
 int **worldMap;
 double depthBuffer[1260];
 
-#define numSprites 3
+
 char *weapon[5] = {"textures/we1.png", "textures/we2.png",
 	"textures/we3.png", "textures/we4.png", "textures/we6.png"};
 int w = 0, r = 0;
@@ -30,7 +30,7 @@ struct Sprite
   double x;
   double y;
 };
-struct Sprite sprite[numSprites] =
+struct Sprite sprite[3] =
 {
  //{12, 12},// A sprite at position (22.0, 12.0);
  {6,3},
@@ -39,19 +39,20 @@ struct Sprite sprite[numSprites] =
  //{21,5}
 };
 
-typedef struct {
+typedef struct Raindrop
+{
     double x, y; // Position
     double speed;   // Falling speed
 } Raindrop;
-SDL_Instance instance2;
-SDL_Surface *screenSurface2 = NULL;
-Raindrop raindrops[1000]
+
+Raindrop raindrops[1000];
 typedef struct SDL_Instance
 {
     SDL_Window *window;
     SDL_Renderer *renderer;
 } SDL_Instance;
-
+SDL_Instance instance2;
+SDL_Surface *screenSurface2 = NULL;
 
 int init_instance(SDL_Instance *instance, const int SCREEN_WIDTH,
 	const int SCREEN_HEIGHT, char *name);

@@ -2,14 +2,16 @@
 
 
 
-int main(int argc, char *args[])
+
+int main(int argc, char *argv[])
 {
-	Uint32 oldTime
+	Uint32 oldTime;
 	SDL_Instance instance;
 	SDL_Surface *screenSurface = NULL;
 	double posX = 3, posY = 4, dirX = -1, dirY = 0, planeX = 0, planeY = 1;
-	SDL_Surface texture, *original = IMG_Load("textures/colorstone.png");
+	SDL_Surface *texture, *original = IMG_Load("textures/colorstone.png");
 
+	printf("%d %s\n", argc, argv[0]);
 	if (!original)
 	{
 		printf("error loading image\n");
@@ -36,5 +38,5 @@ int main(int argc, char *args[])
 			screenSurface, instance, &oldTime) == 2)
 			return (1);
 	}
-	return (0)
+	return (0);
 }

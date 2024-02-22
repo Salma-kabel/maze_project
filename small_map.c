@@ -34,6 +34,6 @@ void draw(SDL_Surface *screenSurface, SDL_Instance instance,
 	fov.y = (posy + dirY) * blockHeight;
 	fov.w = blockWidth;
 	fov.h = blockHeight;
-	SDL_FillRect(screenSurface, &fov, SDL_MapRGB(screenSurface->format, 0, 0, 255))
+	SDL_FillRect(screenSurface, &fov, SDL_MapRGB(screenSurface->format, 0, 0, 255));
 	SDL_UpdateWindowSurface(instance.window);
 }

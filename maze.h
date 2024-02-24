@@ -85,7 +85,7 @@ void draw(SDL_Surface *screenSurface, SDL_Instance instance,
 	int posx, int posy, double dirX, double dirY);
 void draw_enemies( SDL_Surface *screenSurface, double posX, double posY,
 	double dirX, double dirY, double planeX, double planeY);
-void draw_weapon(SDL_Surface *screenSurface, int w);
+void draw_weapon(SDL_Surface *screenSurface, int weapon_ch);
 void init_rain();
 void draw_rain(SDL_Instance instance, SDL_Surface *screenSurface);
 int keys(double *posX, double *posY, double *dirX, double *dirY,

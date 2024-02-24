@@ -57,3 +57,4 @@ salma is a software engineer who has a passion for coding and developing program
 ### Repository of the project
 [The Maze Project](https://github.com/Salma-kabel/maze_project/tree/master)
 [Demo Video](https://www.youtube.com/watch?v=nra30IO2sqM&feature=youtu.be&ab_channel=SalmaSalah)
+Textures are from Wolfenstein 3D game

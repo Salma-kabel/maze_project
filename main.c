@@ -1,6 +1,11 @@
 #include "maze.h"
 
-
+/**
+* main - creates the instance and handles main game loop
+* @argc: number of commandline arguments
+* @argv: array of commandline arguments
+* Return: 0 if success, 1 otherwise
+*/
 
 
 int main(int argc, char *argv[])

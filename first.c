@@ -1,6 +1,13 @@
 #include "maze.h"
 
-
+/**
+* init_instance - Used to initialize sdl instance and create window and renderer
+* @instance: pointer to instance to initialize
+* @SCREEN_WIDTH: width of the created window
+* @SCREEN_HEIGHT: height of the created window
+* @name: name of the created window
+* Return: 0 if success 1 otherwise
+*/
 
 int init_instance(SDL_Instance *instance, const int SCREEN_WIDTH, const int SCREEN_HEIGHT, char *name)
 {

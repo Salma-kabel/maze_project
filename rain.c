@@ -1,6 +1,9 @@
 #include "maze.h"
 
-
+/**
+* init_rain - Used to initialize raindrops giving each on
+* a random position and a specific speed
+*/
 
 void init_rain(void)
 {
@@ -14,7 +17,12 @@ void init_rain(void)
 	}
 }
 
-
+/*
+* draw_rain - Used to draw raindrops on the screen and update its
+* position and speed
+* @instance: instance to update
+* @screenSurface: surface to draw on
+*/
 void draw_rain(SDL_Instance instance, SDL_Surface *screenSurface)
 {
 	SDL_Rect raindropRect;

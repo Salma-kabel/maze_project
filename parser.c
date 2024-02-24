@@ -1,6 +1,10 @@
 #include "maze.h"
 
-
+/**
+* parser - Creates a map from a textfile
+* @path: path of the file to use
+* Return: pointer to the created map or NULL if failed
+*/
 int **parser(char *path)
 {
 	int i, j, c;

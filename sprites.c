@@ -1,6 +1,15 @@
 #include "maze.h"
 
-
+/**
+* draw_enemies - Used to draw enemies on the map
+* @screenSurface: surface of the screen to draw on
+* @posX: position x of the player
+* @posY: position y of the player
+* @dirX: x coordinate of the direction plane
+* @dirY: y coordinate of the direction plane
+* @planeX: x coordinate of the camera plane
+* @planeY: y coordinate of the camera plane
+*/
 
 void draw_enemies(SDL_Surface *screenSurface, double posX, double posY, double dirX, double dirY, double planeX, double planeY)
 {
@@ -54,10 +63,15 @@ void draw_enemies(SDL_Surface *screenSurface, double posX, double posY, double d
 	SDL_FreeSurface(spriteImage);
 }
 
-void draw_weapon(SDL_Surface *screenSurface, int w)
+/**
+* draw_weapon - Used to draw different weapons on the screen
+* @screenSurface: surface to draw on
+* @weapon_ch: number of weapon to use
+*/
+void draw_weapon(SDL_Surface *screenSurface, int weapon_ch)
 {
 	int weaponPosX, weaponPosY;
-	SDL_Surface *originalWeapon = IMG_Load(weapon[w]);
+	SDL_Surface *originalWeapon = IMG_Load(weapon[weapon_ch]);
 	SDL_Surface *weaponImage = SDL_CreateRGBSurface(0, 500, 404, 32, 0, 0, 0, 0);
 	Uint32 colorkey = SDL_MapRGB(weaponImage->format, 255, 255, 255);
 	SDL_Rect weaponRect;

@@ -1,6 +1,15 @@
 #include "maze.h"
 
-
+/**
+* draw - Used to draw a map of the whole maze and the 
+* location of the player and his direction
+* @screenSurface: surface of the screen to draw on
+* @instance: sdl instance to update
+* @posX: position x of the player
+* @posY: position y of the player
+* @dirX: x coordinate of the direction plane
+* @dirY: y coordinate of the direction plane
+*/
 
 void draw(SDL_Surface *screenSurface, SDL_Instance instance,
 	int posx, int posy, double dirX, double dirY)

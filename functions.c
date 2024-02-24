@@ -1,6 +1,12 @@
 #include "maze.h"
 
-
+/**
+* color_pixel - colors pixels on the screen to a specific color
+* @surface: surface of the pixels
+* @x: x coordinate of the pixel
+* @y: y coordinate of the pixel
+* @color: color to use on the pixel
+*/
 
 void color_pixel(SDL_Surface *surface, int x, int y, Uint32 color)
 {
@@ -10,6 +16,16 @@ void color_pixel(SDL_Surface *surface, int x, int y, Uint32 color)
 	*ptr = color;
 }
 
+/**
+* move_rot - Handles the move of the player and rotation of camera
+* @planeX: x coordinate of the camera plane
+* @planeY: y coordinate of the camera plane
+* @posX: position x of the player
+* @posY: position y of the player
+* @dirX: x coordinate of the direction plane
+* @dirY: y coordinate of the direction plane
+* @frameTime: frametime to use
+*/
 void move_rot(double *planeX, double *planeY, double *posX, double *posY,
 	double *dirX, double *dirY, double frameTime)
 {

@@ -1,6 +1,16 @@
 #include "maze.h"
 
-
+/**
+* floor_tex - Used to draw the floor texture on the screen
+* @posX: position x of the player
+* @posY: position y of the player
+* @dirX: x coordinate of the direction plane
+* @dirY: y coordinate of the direction plane
+* @planeX: x coordinate of the camera plane
+* @planeY: y coordinate of the camera plane
+* @screenSurface: surface of the screen to draw on
+* @instance: sdl instance to update
+*/
 
 void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 	double *planeX,	double *planeY,
@@ -8,7 +18,7 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 {
 	float rayDirX0, rayDirY0, rayDirX1, rayDirY1, posZ, rowDistance, floorStepX,
 		floorStepY, floorX, floorY;
-	int cellX, cellY, x, ty, tx, p;
+	int cellX, cellY, x, ty, tx, pos;
 	Uint32 color;
 	SDL_Surface *original = IMG_Load("textures/redbrick.png");
 	SDL_Surface *texture = SDL_CreateRGBSurface(0, 128, 128, 32, 0, 0, 0, 0);
@@ -20,9 +30,9 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 		rayDirY0 = *dirY - *planeY;
 		rayDirX1 = *dirX + *planeX;
 		rayDirY1 = *dirY + *planeY;
-		p = y - SCREEN_HEIGHT / 2;
+		pos = y - SCREEN_HEIGHT / 2;
 		posZ = 0.5 * SCREEN_HEIGHT;
-		rowDistance = posZ / p;
+		rowDistance = posZ / pos;
 		floorStepX = rowDistance * (rayDirX1 - rayDirX0) / SCREEN_WIDTH;
 		floorStepY = rowDistance * (rayDirY1 - rayDirY0) / SCREEN_WIDTH;
 		floorX = *posX + rowDistance * rayDirX0;
@@ -43,6 +53,17 @@ void floor_tex(double *posX, double *posY, double *dirX, double *dirY,
 	SDL_UpdateWindowSurface(instance.window);
 }
 
+/**
+* wall_tex - Used to draw the walls and its texture on the screen
+* @texture: texture surface to use
+* @posX: position x of the player
+* @posY: position y of the player
+* @dirX: x coordinate of the direction plane
+* @dirY: y coordinate of the direction plane
+* @planeX: x coordinate of the camera plane
+* @planeY: y coordinate of the camera plane
+* @screenSurface: surface of the screen to draw on
+*/
 
 void wall_tex(SDL_Surface *texture, double *posX, double *posY, double *dirX,
 	double *dirY, double *planeX, double *planeY, SDL_Surface *screenSurface)
